@@ -28,7 +28,7 @@ enum SortField {
 function getPreparedGoods(
   goods: string[],
   { sortField, reverse }: { sortField: SortField | ''; reverse: boolean },
-) {
+): string[] {
   let preparedGoods = [...goods];
 
   if (sortField) {
